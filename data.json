@@ -1,0 +1,392 @@
+[
+    {
+        "nome": "Windows 1.0",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Histórico",
+        "descricao": "Primeira versão com uma interface gráfica para o MS-DOS, introduzindo o uso do mouse.",
+        "ano": 1985,
+        "link": "https://arstechnica.com/features/2005/05/windows-1-0/",
+        "curiosidade": "Seu codinome era 'Interface Manager' e ele dependia totalmente do MS-DOS para funcionar.",
+        "tags": [ "windows", "microsoft", "histórico", "gui", "ms-dos", "mouse" ]
+    },
+    {
+        "nome": "Windows 3.0",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Histórico",
+        "descricao": "Primeiro sucesso comercial da Microsoft, com melhor gerenciamento de memória e ícones aprimorados.",
+        "ano": 1990,
+        "link": "https://arstechnica.com/information-technology/2010/05/windows-3-0-is-20-years-old-today/",
+        "curiosidade": "Foi a versão que introduziu o jogo 'Paciência' (Solitaire), criado para ensinar os usuários a arrastar e soltar com o mouse.",
+        "tags": [ "windows", "microsoft", "histórico", "paciência", "solitaire" ]
+    },
+    {
+        "nome": "Windows 95",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Desktop",
+        "descricao": "Introduziu o Menu Iniciar, a barra de tarefas e o suporte nativo à internet.",
+        "ano": 1995,
+        "link": "https://www.howtogeek.com/749998/windows-95-is-26-years-old-heres-how-it-made-history/",
+        "curiosidade": "O som de inicialização, 'The Microsoft Sound', foi composto por Brian Eno em um computador Macintosh.",
+        "tags": [ "windows", "microsoft", "desktop", "menu iniciar", "internet" ]
+    },
+    {
+        "nome": "Windows 98",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Desktop",
+        "descricao": "Versão aprimorada do Windows 95 com melhor suporte a hardware (USB) e integração com a web.",
+        "ano": 1998,
+        "link": "https://arstechnica.com/gadgets/2014/06/the-ars-technica-review-windows-98/",
+        "curiosidade": "Durante uma demonstração pública, Bill Gates presenciou uma 'Tela Azul da Morte' ao tentar conectar um scanner.",
+        "tags": [ "windows", "microsoft", "desktop", "usb", "web" ]
+    },
+    {
+        "nome": "Windows XP",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Desktop",
+        "descricao": "Uma das versões mais populares, conhecida por sua estabilidade e interface redesenhada.",
+        "ano": 2001,
+        "link": "https://arstechnica.com/gadgets/2001/10/windows-xp/",
+        "curiosidade": "O papel de parede padrão, 'Bliss', é uma foto real de uma colina na Califórnia, e não uma imagem gerada por computador.",
+        "tags": [ "windows", "microsoft", "desktop", "bliss" ]
+    },
+    {
+        "nome": "Windows Vista",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Desktop",
+        "descricao": "Introduziu a interface Aero com efeitos de transparência, mas foi criticado por requisitos de hardware elevados.",
+        "ano": 2007,
+        "link": "https://arstechnica.com/gadgets/2007/01/vista-review/",
+        "curiosidade": "Seu desenvolvimento foi tão longo e complexo que seu codinome, 'Longhorn', se tornou famoso na indústria.",
+        "tags": [ "windows", "microsoft", "desktop", "aero", "longhorn" ]
+    },
+    {
+        "nome": "Windows 7",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Desktop",
+        "descricao": "Sucessor bem-sucedido do Vista, elogiado por seu desempenho, estabilidade e interface aprimorada.",
+        "ano": 2009,
+        "link": "https://arstechnica.com/gadgets/2009/10/windows-7-review/",
+        "curiosidade": "Muitos consideram o Windows 7 como a versão que o Windows Vista deveria ter sido desde o início.",
+        "tags": [ "windows", "microsoft", "desktop" ]
+    },
+    {
+        "nome": "Windows 8",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Desktop",
+        "descricao": "Apresentou uma nova interface (Metro) otimizada para telas sensíveis ao toque e removeu o Menu Iniciar tradicional.",
+        "ano": 2012,
+        "link": "https://arstechnica.com/information-technology/2012/10/windows-8-and-windows-rt-a-tale-of-two-desktops/",
+        "curiosidade": "A remoção do botão 'Iniciar' foi uma das mudanças mais polêmicas, fazendo a Microsoft trazê-lo de volta no Windows 8.1.",
+        "tags": [ "windows", "microsoft", "desktop", "metro", "touchscreen" ]
+    },
+    {
+        "nome": "Windows 10",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Desktop",
+        "descricao": "Unificou a experiência entre desktops e dispositivos móveis, trazendo de volta o Menu Iniciar e introduzindo a Cortana.",
+        "ano": 2015,
+        "link": "https://learn.microsoft.com/pt-br/windows/release-health/release-information",
+        "curiosidade": "A Microsoft pulou o 'Windows 9' para simbolizar um grande salto tecnológico e o início do 'Windows como um serviço'.",
+        "tags": [ "windows", "microsoft", "desktop", "cortana", "menu iniciar" ]
+    },
+    {
+        "nome": "Windows 11",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Desktop",
+        "descricao": "Versão mais recente com um design renovado, Menu Iniciar centralizado e melhorias de produtividade e segurança.",
+        "ano": 2021,
+        "link": "https://learn.microsoft.com/pt-br/windows/release-health/windows-11-release-information",
+        "curiosidade": "A exigência do chip de segurança TPM 2.0 tornou muitos computadores antigos incompatíveis com a atualização.",
+        "tags": [ "windows", "microsoft", "desktop", "tpm 2.0", "menu iniciar" ]
+    },
+    {
+        "nome": "Windows NT",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Servidor",
+        "descricao": "Linha de sistemas operacionais voltada para o mercado corporativo e servidores, base para as versões modernas do Windows.",
+        "ano": 1993,
+        "link": "https://www.howtogeek.com/794346/what-was-windows-nt-and-why-was-it-so-important/",
+        "curiosidade": "Foi desenvolvido por uma equipe liderada por Dave Cutler, um lendário engenheiro que a Microsoft contratou da DEC, onde ele criou o sistema VMS.",
+        "tags": [ "windows", "microsoft", "servidor", "corporativo", "dave cutler" ]
+    },
+    {
+        "nome": "Windows Server",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Servidor",
+        "descricao": "Série de sistemas operacionais de nível empresarial desenvolvidos pela Microsoft, fornecendo infraestrutura robusta para redes e hospedagem.",
+        "ano": 2003,
+        "link": "https://www.microsoft.com/windowsserver",
+        "curiosidade": "A funcionalidade central do Windows Server, o Active Directory, é essencial para a gestão de redes corporativas em todo o mundo.",
+        "tags": [ "microsoft", "servidor", "rede", "active-directory", "proprietário", "nano server", "nuvem" ]
+    },
+    {
+        "nome": "macOS",
+        "desenvolvedor": "Apple",
+        "categoria": "Desktop",
+        "descricao": "A atual linha de sistemas operacionais da Apple para computadores Mac, baseada na tecnologia NeXTSTEP e FreeBSD.",
+        "ano": 2001,
+        "link": "https://www.apple.com/macos",
+        "curiosidade": "Até 2016, a Apple se referia ao seu sistema como OS X; a mudança para macOS alinhou-se aos nomes iOS, watchOS e tvOS.",
+        "tags": [ "apple", "desktop", "unix-like", "proprietário", "mach-kernel", "macintosh", "mac os x" ]
+    },
+    {
+        "nome": "Linux",
+        "desenvolvedor": "Comunidade (Linus Torvalds)",
+        "categoria": "Núcleo",
+        "descricao": "Núcleo de sistema operacional de código aberto no qual se baseiam muitas distribuições como Ubuntu, Debian e Fedora.",
+        "ano": 1991,
+        "link": "https://www.linux.org/",
+        "curiosidade": "Seu criador, Linus Torvalds, o desenvolveu por hobby e o anunciou como 'apenas um hobby, não será grande e profissional como o gnu'.",
+        "tags": [ "linux", "comunidade", "núcleo", "código aberto", "linus torvalds" ]
+    },
+    {
+        "nome": "Android",
+        "desenvolvedor": "Google (Open Handset Alliance)",
+        "categoria": "Mobile",
+        "descricao": "O sistema operacional móvel mais popular do mundo, baseado no kernel Linux, focado em smartphones e tablets.",
+        "ano": 2008,
+        "link": "https://www.android.com",
+        "curiosidade": "Embora use o kernel Linux, o Android não executa a maioria das ferramentas GNU/Linux padrão e usa sua própria máquina virtual (ART).",
+        "tags": [ "google", "mobile", "smartphone", "open-source", "linux-kernel", "tablet" ]
+    },
+    {
+        "nome": "iOS",
+        "desenvolvedor": "Apple",
+        "categoria": "Mobile",
+        "descricao": "Sistema operacional móvel proprietário da Apple, derivado do macOS, conhecido por sua segurança e ecossistema fechado.",
+        "ano": 2007,
+        "link": "https://www.apple.com/ios",
+        "curiosidade": "O nome original do iOS, quando lançado com o primeiro iPhone, era 'iPhone OS'.",
+        "tags": [ "apple", "mobile", "smartphone", "proprietário", "segurança", "ipad", "ipod" ]
+    },
+    {
+        "nome": "Ubuntu",
+        "desenvolvedor": "Canonical",
+        "categoria": "Distribuição Linux",
+        "descricao": "Distribuição Linux popular baseada em Debian, focada na facilidade de uso e na experiência do usuário.",
+        "ano": 2004,
+        "link": "https://ubuntu.com/desktop/developers",
+        "curiosidade": "O nome 'Ubuntu' é uma antiga palavra africana que significa 'humanidade para os outros' ou 'sou o que sou pelo que nós somos'.",
+        "tags": [ "ubuntu", "canonical", "distribuição linux", "debian", "desktop" ]
+    },
+    {
+        "nome": "FreeBSD",
+        "desenvolvedor": "Comunidade FreeBSD",
+        "categoria": "Servidor",
+        "descricao": "Sistema operacional avançado para arquiteturas de servidor e desktop, descendente do BSD de Berkeley e notável por sua estabilidade e performance.",
+        "ano": 1993,
+        "link": "https://www.freebsd.org",
+        "curiosidade": "O kernel do PlayStation 4 e do Nintendo Switch utiliza componentes do FreeBSD.",
+        "tags": [ "bsd", "unix-like", "open-source", "servidor", "estabilidade", "playstation" ]
+    },
+    {
+        "nome": "Debian",
+        "desenvolvedor": "Comunidade Debian",
+        "categoria": "Desktop/Servidor",
+        "descricao": "Uma das distribuições Linux mais influentes, conhecida por seu compromisso com software livre e seu vasto repositório de pacotes (APT).",
+        "ano": 1993,
+        "link": "https://www.debian.org",
+        "curiosidade": "Muitas outras distribuições Linux populares, incluindo o Ubuntu, são baseadas no Debian.",
+        "tags": [ "linux", "distribuição", "open-source", "apt", "servidor", "ian murdock" ]
+    },
+    {
+        "nome": "Fedora",
+        "desenvolvedor": "Fedora Project (Red Hat)",
+        "categoria": "Distribuição Linux",
+        "descricao": "Distribuição Linux desenvolvida pela comunidade do Projeto Fedora e patrocinada pela Red Hat. Focada em inovação e software de código aberto.",
+        "ano": 2003,
+        "link": "https://docs.fedoraproject.org/",
+        "curiosidade": "Funciona como um 'campo de testes' para novas tecnologias que, se bem-sucedidas, são incorporadas ao Red Hat Enterprise Linux (RHEL).",
+        "tags": [ "fedora", "fedora project", "distribuição linux", "red hat", "rhel" ]
+    },
+    {
+        "nome": "Solaris",
+        "desenvolvedor": "Sun Microsystems (agora Oracle)",
+        "categoria": "Servidor",
+        "descricao": "Sistema operacional Unix proprietário conhecido por sua escalabilidade, recursos de rede e o inovador sistema de arquivos ZFS.",
+        "ano": 1992,
+        "link": "https://www.oracle.com/solaris",
+        "curiosidade": "Solaris foi um dos primeiros sistemas operacionais a integrar o DTrace, uma ferramenta dinâmica de rastreamento de kernel amplamente aclamada.",
+        "tags": [ "unix", "servidor", "zfs", "oracle", "proprietário", "sun microsystems", "dtrace" ]
+    },
+    {
+        "nome": "MS-DOS",
+        "desenvolvedor": "Microsoft",
+        "categoria": "Histórico",
+        "descricao": "Sistema operacional de linha de comando de 16 bits que se tornou o padrão para PCs compatíveis com IBM na década de 1980.",
+        "ano": 1981,
+        "link": "https://github.com/microsoft/MS-DOS",
+        "curiosidade": "A Microsoft não o criou do zero. Ela comprou um sistema chamado QDOS (Quick and Dirty Operating System) por cerca de $75.000 e o adaptou.",
+        "tags": [ "ms-dos", "microsoft", "histórico", "linha de comando", "qdos", "16-bit", "pc-compatível" ]
+    },
+    {
+        "nome": "ChromeOS",
+        "desenvolvedor": "Google",
+        "categoria": "Desktop",
+        "descricao": "Sistema operacional leve baseado no kernel Linux, focado em aplicativos web e navegação, usado principalmente em Chromebooks.",
+        "ano": 2011,
+        "link": "https://www.google.com/chromebook/chromeos/",
+        "curiosidade": "Foi projetado para ser extremamente rápido na inicialização. A meta original do Google era que o sistema ligasse em menos de 7 segundos.",
+        "tags": [ "chromeos", "google", "desktop", "linux", "chrome", "web apps", "nuvem" ]
+    },
+    {
+        "nome": "AmigaOS",
+        "desenvolvedor": "Commodore International",
+        "categoria": "Histórico",
+        "descricao": "Sistema operacional gráfico para a linha de computadores pessoais Amiga, conhecido por sua multitarefa preemptiva avançada para a época.",
+        "ano": 1985,
+        "link": "https://www.amigaos.net/",
+        "curiosidade": "O AmigaOS permitia que o usuário assistisse a um vídeo em movimento enquanto formatava um disquete, algo raro para sistemas da época.",
+        "tags": [ "histórico", "commodore", "desktop", "multitarefa", "gráficos" ]
+    },
+    {
+        "nome": "OS/2",
+        "desenvolvedor": "IBM (Originalmente Microsoft e IBM)",
+        "categoria": "Histórico",
+        "descricao": "Sistema operacional multitarefa protegido, desenvolvido para ser o sucessor do DOS. Ganhou popularidade como OS de servidor e caixas eletrônicos (ATMs).",
+        "ano": 1987,
+        "link": "https://www.ibm.com/historico/os2",
+        "curiosidade": "A disputa entre Microsoft e IBM sobre o OS/2 levou a Microsoft a focar totalmente no Windows 3.0 e Windows NT.",
+        "tags": [ "ibm", "histórico", "desktop", "multitarefa", "servidor" ]
+    },
+    {
+        "nome": "BeOS",
+        "desenvolvedor": "Be Inc.",
+        "categoria": "Histórico",
+        "descricao": "Sistema operacional focado em multimídia e alta performance, projetado para rodar em hardware BeBox e, posteriormente, PCs padrão.",
+        "ano": 1991,
+        "link": "http://www.beos.com/historico",
+        "curiosidade": "A Apple considerou seriamente comprar a Be Inc. e usar o BeOS como base para seu novo sistema operacional antes de optar pela NeXTSTEP.",
+        "tags": [ "multimídia", "histórico", "performance", "desktop", "bebox" ]
+    },
+    {
+        "nome": "Haiku",
+        "desenvolvedor": "Comunidade Haiku",
+        "categoria": "Desktop",
+        "descricao": "Sistema operacional de código aberto destinado a recriar o BeOS, mantendo a compatibilidade binária e o foco na resposta rápida e multimídia.",
+        "ano": 2001,
+        "link": "https://www.haiku-os.org",
+        "curiosidade": "O nome Haiku é uma homenagem a BeOS, devido à sua interface de usuário elegante e simples (comparável a um poema Haiku).",
+        "tags": [ "beos-clone", "open-source", "desktop", "multimídia" ]
+    },
+    {
+        "nome": "NeXTSTEP",
+        "desenvolvedor": "NeXT, Inc.",
+        "categoria": "Histórico",
+        "descricao": "Sistema operacional orientado a objetos, baseado em Mach kernel e BSD, desenvolvido pela empresa de Steve Jobs após ele deixar a Apple.",
+        "ano": 1989,
+        "link": "https://www.next.com/historico",
+        "curiosidade": "O NeXTSTEP foi a base tecnológica para o que viria a se tornar o macOS da Apple.",
+        "tags": [ "apple", "unix-like", "histórico", "steve-jobs", "orientado-a-objetos" ]
+    },
+    {
+        "nome": "QNX",
+        "desenvolvedor": "BlackBerry (Anteriormente QNX Software Systems)",
+        "categoria": "Embedded",
+        "descricao": "Sistema operacional em tempo real (RTOS) baseado em microkernel, amplamente utilizado em sistemas críticos, como automotivos e equipamentos médicos.",
+        "ano": 1980,
+        "link": "https://www.qnx.com",
+        "curiosidade": "O QNX é conhecido por ser extremamente confiável; ele é o kernel por trás de muitos sistemas de infoentretenimento de carros modernos.",
+        "tags": [ "rtos", "microkernel", "embedded", "automotivo", "tempo-real" ]
+    },
+    {
+        "nome": "watchOS",
+        "desenvolvedor": "Apple",
+        "categoria": "Mobile",
+        "descricao": "Sistema operacional projetado especificamente para o Apple Watch, com foco em saúde, notificações e interação rápida.",
+        "ano": 2015,
+        "link": "https://www.apple.com/watchos",
+        "curiosidade": "watchOS utiliza uma interface de 'Coroa Digital' e feedback háptico para interações, diferente das interfaces móveis tradicionais.",
+        "tags": [ "apple", "mobile", "wearable", "smartwatch", "proprietário" ]
+    },
+    {
+        "nome": "Tizen",
+        "desenvolvedor": "Samsung / Linux Foundation",
+        "categoria": "Embedded/Mobile",
+        "descricao": "Sistema operacional de código aberto baseado em Linux, usado primariamente pela Samsung em Smart TVs, relógios e alguns smartphones.",
+        "ano": 2012,
+        "link": "https://www.tizen.org",
+        "curiosidade": "Tizen é o sucessor de vários projetos de código aberto, incluindo o MeeGo, que foi um esforço conjunto entre a Intel e a Nokia.",
+        "tags": [ "samsung", "embedded", "linux-base", "open-source", "smart-tv" ]
+    },
+    {
+        "nome": "Plan 9 from Bell Labs",
+        "desenvolvedor": "Bell Labs",
+        "categoria": "Histórico/Pesquisa",
+        "descricao": "Sistema operacional de pesquisa desenvolvido como sucessor conceitual do Unix, focado na ideia de que 'tudo é um arquivo'.",
+        "ano": 1992,
+        "link": "https://www.bell-labs.com/plan9",
+        "curiosidade": "Os desenvolvedores originais do Unix (Ken Thompson e Dennis Ritchie) estiveram envolvidos na criação do Plan 9.",
+        "tags": [ "bell-labs", "pesquisa", "unix-like", "distribuído", "histórico" ]
+    },
+    {
+        "nome": "OpenBSD",
+        "desenvolvedor": "Comunidade OpenBSD",
+        "categoria": "Servidor",
+        "descricao": "Sistema operacional da família BSD, extremamente focado em segurança e código limpo, famoso pelo lema 'By default, secure'.",
+        "ano": 1995,
+        "link": "https://www.openbsd.org",
+        "curiosidade": "OpenBSD é o projeto que originou o OpenSSH, que se tornou o padrão global para comunicação segura em redes.",
+        "tags": [ "bsd", "segurança", "open-source", "servidor", "criptografia" ]
+    },
+    {
+        "nome": "Minix",
+        "desenvolvedor": "Andrew S. Tanenbaum",
+        "categoria": "Educacional",
+        "descricao": "Sistema operacional microkernel projetado para fins educacionais. Embora pequeno, foi a inspiração para o desenvolvimento inicial do Linux.",
+        "ano": 1987,
+        "link": "https://www.minix3.org",
+        "curiosidade": "O Minix 3 provou que o design de microkernel poderia ser extremamente resiliente a falhas de driver, tornando-o popular em sistemas embarcados.",
+        "tags": [ "educacional", "microkernel", "histórico", "tanenbaum" ]
+    },
+    {
+        "nome": "IRIX",
+        "desenvolvedor": "Silicon Graphics, Inc. (SGI)",
+        "categoria": "Histórico",
+        "descricao": "Sistema operacional Unix proprietário com foco em computação gráfica e visualização, usado em estações de trabalho de alto desempenho da SGI.",
+        "ano": 1988,
+        "link": "https://www.sgi.com/irix",
+        "curiosidade": "IRIX foi amplamente utilizado para produzir efeitos visuais em grandes filmes de Hollywood nos anos 90, como 'Jurassic Park'.",
+        "tags": [ "unix", "gráficos", "histórico", "sgi", "workstation" ]
+    },
+    {
+        "nome": "CP/M",
+        "desenvolvedor": "Digital Research",
+        "categoria": "Histórico",
+        "descricao": "Sistema operacional popular para microcomputadores baseados no microprocessador Intel 8080 e Zilog Z80 durante o final dos anos 70 e início dos 80.",
+        "ano": 1974,
+        "link": "https://www.digitalresearch.biz/cpm",
+        "curiosidade": "O CP/M serviu de base conceitual para o MS-DOS, pois ambos compartilhavam comandos e estruturas de arquivos semelhantes.",
+        "tags": [ "histórico", "8-bit", "microcomputador", "comando" ]
+    },
+    {
+        "nome": "Xerox Alto OS",
+        "desenvolvedor": "Xerox PARC",
+        "categoria": "Histórico",
+        "descricao": "Sistema operacional inovador que rodava no Xerox Alto, o primeiro computador pessoal a utilizar a metáfora de desktop e interface gráfica de usuário (GUI).",
+        "ano": 1973,
+        "link": "https://www.xerox.com/alto/historico",
+        "curiosidade": "Embora nunca comercializado em massa, o Xerox Alto e seu SO inspiraram diretamente Steve Jobs a criar a GUI do Macintosh.",
+        "tags": [ "histórico", "gui", "desktop", "parc", "interface" ]
+    },
+    {
+        "nome": "Multics",
+        "desenvolvedor": "MIT / Bell Labs / General Electric",
+        "categoria": "Histórico",
+        "descricao": "Um dos primeiros sistemas operacionais de tempo compartilhado. Embora não tenha tido sucesso comercial, influenciou profundamente o desenvolvimento do Unix.",
+        "ano": 1969,
+        "link": "https://multics-wiki.org",
+        "curiosidade": "O nome 'Unix' é um trocadilho com 'Multics' (Multiplexed Information and Computing Service), significando 'Uniplexed Information and Computing Service'.",
+        "tags": [ "histórico", "mainframe", "tempo-compartilhado", "mit" ]
+    },
+    {
+        "nome": "Fuchsia",
+        "desenvolvedor": "Google",
+        "categoria": "Experimental",
+        "descricao": "Sistema operacional em desenvolvimento pelo Google, baseado em um novo microkernel chamado Zircon, projetado para rodar em diversos dispositivos.",
+        "ano": 2016,
+        "link": "https://fuchsia.dev",
+        "curiosidade": "Ao contrário do Android e ChromeOS, o Fuchsia não é baseado no Linux, indicando uma mudança fundamental na arquitetura de kernel do Google.",
+        "tags": [ "google", "experimental", "microkernel", "zircon", "embedded" ]
+    }
+]

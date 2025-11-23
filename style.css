@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); /* Importa a fonte 'Quicksand' do Google Fonts para ser usada na página. */
+
+* {
+    box-sizing: border-box; /* Seletor universal (*). Garante que o padding e a borda sejam incluídos na largura e altura total do elemento, facilitando o layout. */
+}
+
+/* ':root' é um seletor que representa o elemento <html>. É usado aqui para definir variáveis CSS (custom properties) globais. */
+:root { 
+    --primary-color: #ffffff;   /* Cor primária (branco), para máximo destaque nos títulos. */
+    --secondary-color: #f8f7f7; /* Cor secundária (cinza bem claro), para o texto principal. */
+    --tertiary-color: #888888;  /* Cor terciária (cinza médio), para texto de apoio e bordas. */
+    --bg-color: #1c1c1c;        /* Cor de fundo principal (quase preto). */
+}
+
+/* Estilos aplicados ao corpo inteiro da página. */
+body {
+    margin: 0; /* Remove a margem padrão que os navegadores aplicam ao <body>. */
+    background: var(--bg-color); /* Define a cor de fundo usando a variável '--bg-color'. */
+    position: relative; /* Define o contexto de posicionamento para elementos filhos com 'position: absolute' (como o rodapé). */
+    min-height: 100vh; /* Garante que o corpo da página tenha no mínimo a altura total da tela (viewport height). */
+    color: var(--secondary-color); /* Define a cor padrão do texto na página. */
+    font-family: "Quicksand", sans-serif; /* Define a família da fonte principal. 'sans-serif' é uma fonte de fallback. */
+}
+
+/* Estilização customizada da barra de rolagem para navegadores WebKit (Chrome, Safari, Edge). */
+::-webkit-scrollbar {
+    width: 12px; /* Define a largura da barra de rolagem. */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color); /* Define a cor da "pista" da barra de rolagem. */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-color); /* Define a cor da parte móvel (o "polegar") da barra. */
+    border-radius: 20px; /* Arredonda as bordas do polegar. */
+    border: 3px solid var(--bg-color); /* Cria uma borda da mesma cor do fundo, dando um efeito de espaçamento. */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color); /* Muda a cor do polegar quando o mouse está sobre ele. */
+}
+
+/* Estilos para o cabeçalho da página. */
+header {
+    padding: 2rem 1rem; /* Espaçamento interno: 2rem em cima/baixo, 1rem nas laterais. */
+    display: flex;
+    flex-direction: column; /* Empilha os containers filhos verticalmente. */
+    gap: 1.5rem; /* Adiciona um espaço entre a linha da busca e a linha dos filtros. */
+    position: sticky; /* Faz o cabeçalho "grudar" no topo da tela ao rolar a página. */
+    top: 0; /* Define a posição do topo quando o cabeçalho se torna 'sticky'. */
+    background: var(--bg-color); /* Cor de fundo do cabeçalho. */
+    z-index: 10; /* Garante que o cabeçalho fique acima de outros elementos da página ao rolar. */
+}
+
+/* Container para a linha superior do cabeçalho (título e busca). */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Coloca o título à esquerda e a busca à direita. */
+    width: 100%;
+}
+
+/* Estilo do título principal. */
+header h1 {
+    font-size: 1.5rem; /* Tamanho da fonte do título principal. */
+    margin: 0; /* Remove a margem padrão do h1. */
+    font-weight: 500; /* Define o peso da fonte (médio). */
+    white-space: nowrap; /* Impede que o texto do título quebre em várias linhas. */
+}
+
+/* Estilos para o campo de busca. */
+.search-container input {
+    padding: 0.375rem 0.75rem; /* Espaçamento interno do campo de texto. */
+    border-radius: 1rem; /* Arredonda as bordas do campo. */
+    border: 1px solid var(--tertiary-color); /* Define a cor e espessura da borda. */
+    background: var(--bg-color); /* Cor de fundo do campo. */
+    font-family: inherit; /* Faz o campo usar a mesma fonte do restante da página. */
+    font-size: 1.5rem; /* Tamanho da fonte do texto digitado. */
+    transition: all 0.2s ease; /* Adiciona uma animação suave de 0.2s para mudanças de estilo. */
+    width: 30rem; /* Largura fixa do campo de busca. */
+    color: var(--secondary-color); /* Cor do texto que o usuário digita. */
+    margin-right: .5rem; /* Adiciona uma pequena margem à direita do campo. */
+}
+
+/* Estilo do texto de ajuda (placeholder) dentro do campo de busca. */
+.search-container input::placeholder {
+    font-size: 1.2rem; /* Tamanho da fonte do texto de ajuda (placeholder). */
+    font-weight: 300; /* Peso da fonte do placeholder (mais leve). */
+    color: var(--tertiary-color); /* Cor do texto do placeholder. */
+}
+
+.search-container input:focus {
+    outline: none; /* Remove a borda de foco padrão do navegador. */
+    border-color: var(--bg-color); /* Muda a cor da borda quando o campo está em foco. */
+    box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra sutil para indicar foco visualmente. */
+}
+
+/* Estilos para o botão de busca. */
+#botao-busca {
+    padding: 1rem 2rem; /* Espaçamento interno do botão. */
+    border-radius: 1rem; /* Arredonda as bordas do botão. */
+    border: none; /* Remove a borda padrão. */
+    cursor: pointer; /* Muda o cursor para uma "mãozinha" para indicar que é clicável. */
+    font-family: inherit; /* Usa a mesma fonte da página. */
+    font-weight: 500; /* Peso da fonte do texto do botão. */
+    font-size: 1rem; /* Tamanho da fonte do texto do botão. */
+    white-space: nowrap; /* Impede que o texto "Buscar" quebre linha. */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Animação suave para a mudança de cores. */
+    background-color: var(--bg-color); /* Cor de fundo do botão. */
+    color: var(--secondary-color); /* Cor do texto do botão. */
+    border: 1px solid var(--bg-color); /* Borda sutil. */
+}
+
+/* Efeito ao passar o mouse sobre o botão. */
+#botao-busca:hover {
+    background-color: var(--primary-color); /* Muda a cor de fundo quando o mouse está sobre o botão. */
+    color: var(--bg-color); /* Muda a cor do texto para contrastar com o novo fundo. */
+    box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra para destaque. */
+}
+
+#botao-busca:active {
+    transform: scale(0.98); /* Efeito de clique: diminui levemente o tamanho do botão. */
+}
+
+/* Estilos para a área de conteúdo principal. */
+main {
+    max-width: 80rem; /* Define a largura máxima para o conteúdo principal, melhorando a legibilidade em telas grandes. */
+    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente na página. */
+    margin-top: 2rem; /* Adiciona uma margem no topo, separando do cabeçalho. */
+    padding-bottom: 6rem; /* Adiciona um espaçamento na parte inferior para que o conteúdo não fique escondido atrás do rodapé. */
+}
+
+/* Estilo para a mensagem exibida quando nenhum resultado de busca é encontrado. */
+.no-results {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--tertiary-color);
+    padding: 3rem 1rem;
+}
+
+/* Animação de "fade-in" para os cards. */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para cada card individual. */
+article {
+    background: none; /* Define o fundo como transparente. */
+    border-radius: 0; /* Remove qualquer arredondamento de borda. */
+    padding: 0 1rem; /* Espaçamento interno nas laterais do artigo. */
+    margin-bottom: 1.25rem; /* Espaço entre um artigo e outro. */
+    box-shadow: none; /* Remove qualquer sombra. */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação suave para o hover. */
+    border-bottom: 1px solid var(--bg-color); /* Borda sutil na parte inferior. */
+    padding-bottom: 1.5rem; /* Espaçamento interno na parte inferior do artigo. */
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Efeito de hover para os cards. */
+article:hover {
+    transform: scale(1.01); /* Efeito de zoom sutil ao passar o mouse. */
+    cursor: pointer; /* Muda o cursor para indicar que o artigo é clicável. */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
+
+/* Estilo para o título (h2) dentro de cada card. */
+article h2 {
+    margin-top: 0; /* Remove a margem do topo do título. */
+    font-weight: 600; /* Peso da fonte (semi-negrito). */
+    font-size: 1.6rem; /* Tamanho da fonte do título do artigo. */
+    border-bottom: none; /* Remove a borda inferior. */
+    padding-bottom: 0; /* Remove o espaçamento inferior. */
+    margin-bottom: 0.25rem; /* Adiciona uma pequena margem abaixo do título. */
+    color: var(--primary-color); /* Define a cor do título usando a variável. */
+}
+
+/* Estilo geral para os parágrafos dentro dos cards. */
+article p {
+    margin: 0.5rem 0; /* Margem em cima e embaixo do parágrafo. */
+    line-height: 1.6; /* Altura da linha, melhora a legibilidade do texto. */
+    font-size: 1rem; /* Tamanho da fonte do parágrafo. */
+    margin-bottom: 0.5rem; /* Margem na parte de baixo. */
+    color: var(--secondary-color); /* Cor do texto do parágrafo. */
+}
+
+/* Estilo para as informações extras (desenvolvedor e categoria). */
+.info-extra {
+    font-size: 0.9rem;
+    color: var(--tertiary-color);
+    font-style: italic;
+    margin-top: 0.25rem !important;
+}
+
+/* Estilo para o texto em negrito (<strong>) dentro dos parágrafos. */
+article p strong {
+    color: var(--tertiary-color); /* Cor do texto em negrito (tag <strong>). */
+    font-weight: 400; /* Peso da fonte (normal). */
+}
+
+/* Estilo para os links (<a>) dentro dos cards (atualmente não usado, pois o card inteiro é clicável). */
+article a {
+    color: var(--primary-color); /* Cor do link. */
+    text-decoration: none; /* Remove o sublinhado padrão dos links. */
+    font-weight: 200; /* Peso da fonte (bem leve). */
+}
+
+article a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado quando o mouse está sobre o link. */
+}
+
+/* Estilos para o rodapé da página. */
+.footer {
+    position: absolute; /* Posiciona o rodapé em relação ao <body> (que tem 'position: relative'). */
+    bottom: 0; /* Alinha o rodapé na parte inferior do <body>. */
+    left: 0; /* Alinha o rodapé à esquerda. */
+    width: 100%; /* Faz o rodapé ocupar 100% da largura. */
+    color: var(--tertiary-color); /* Cor do texto padrão do rodapé. */
+    background-color: var(--bg-color); /* Cor de fundo do rodapé. */
+    padding: 15px 20px; /* Espaçamento interno. */
+    border-top: 1px solid #3c4043; /* Borda na parte de cima para separar do conteúdo. */
+    font-size: 0.8rem; /* Tamanho da fonte do rodapé. */
+}
+
+/* Estilo para o texto de localização no rodapé. */
+.footer-location {
+    color: #9aa0a6; /* Cor do texto "Brasil". */
+    margin-bottom: 10px; /* Espaço abaixo do texto "Brasil". */
+    text-align: center; /* Centraliza o texto horizontalmente. */
+}
+
+/* Estilos para a lista de links no rodapé. */
+.footer-links {
+    list-style: none; /* Remove os marcadores (bolinhas) da lista <ul>. */
+    display: flex; /* Ativa o Flexbox para alinhar os links. */
+    flex-wrap: wrap; /* Permite que os links quebrem para a próxima linha se não houver espaço. */
+    justify-content: center; /* Centraliza os links horizontalmente. */
+    gap: 15px; /* Cria um espaçamento de 15px entre cada link. */
+}
+
+/* Estilo para os links individuais no rodapé. */
+.footer-links a {
+    color: var(--secondary-color); /* Cor dos links do rodapé. */
+    text-decoration: none; /* Remove o sublinhado. */
+    transition: color 0.2s; /* Animação suave para a mudança de cor. */
+}
+
+.footer-links a:hover {
+    color: var(--primary-color); /* Muda a cor do link ao passar o mouse sobre ele. */
+}
+
+/* Media Query para design responsivo em telas com largura máxima de 768px (tablets). */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empilha os itens do cabeçalho verticalmente. */
+        padding: 1rem; /* Reduz o espaçamento interno. */
+    }
+
+    header h1 {
+        text-align: center; /* Centraliza o título. */
+        margin-bottom: 1rem; /* Adiciona espaço abaixo do título. */
+    }
+
+    .search-container input {
+        width: 90vw; /* Faz o campo de busca ocupar 90% da largura da tela. */
+        font-size: 1.2rem; /* Reduz o tamanho da fonte. */
+    }
+
+    main {
+        padding: 0 1rem; /* Adiciona espaçamento lateral ao conteúdo principal. */
+    }
+
+    article:hover {
+        transform: none; /* Remove o efeito de zoom em dispositivos de toque, onde 'hover' não é ideal. */
+    }
+}
+
+/* Media Query para design responsivo em telas com largura máxima de 480px (celulares). */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1rem; /* Reduz ainda mais o tamanho da fonte do título. */
+        max-width: 70%; /* Limita a largura para evitar que o texto ocupe toda a tela. */
+        word-wrap: break-word; /* Permite que palavras longas quebrem para a próxima linha. */
+    }
+
+    .search-container input,
+    .search-container input::placeholder {
+        font-size: 1rem; /* Reduz o tamanho da fonte do campo de busca e do placeholder. */
+    }
+
+    article h2 {
+        font-size: 1.3rem; /* Reduz o tamanho da fonte dos títulos dos artigos. */
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Garante que o campo de busca e o botão fiquem empilhados. */
+        gap: 0.5rem; /* Reduz o espaço entre eles. */
+    }
+
+    .footer {
+        display: none; /* Oculta o rodapé em telas muito pequenas para economizar espaço. */
+    }
+
+    #botao-busca {
+        margin-top: 1rem; /* Adiciona espaço acima do botão de busca. */
+    }
+}

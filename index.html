@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5, a versão mais recente do HTML. -->
+<html lang="pt-br"> <!-- Elemento raiz da página. 'lang="pt-br"' informa aos navegadores e leitores de tela que o idioma principal é Português do Brasil. -->
+<head>
+    <!-- A seção <head> contém metadados (informações sobre o documento) que não são exibidos diretamente na página. -->
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8, padrão que suporta a maioria dos idiomas e símbolos. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para design responsivo, fazendo a página se adaptar à largura da tela do dispositivo. -->
+    <title>Base de Conhecimento</title> <!-- Define o título que aparece na aba do navegador e nos resultados de busca. -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula a folha de estilos externa 'style.css' para aplicar o design à página. -->
+</head>
+<body>
+    <!-- O <body> contém todo o conteúdo visível da página, como textos, imagens, links, etc. -->
+
+    <header> <!-- Define o cabeçalho da página, uma área de introdução ou navegação. -->
+        <div class="header-top">
+            <h1>Conhecendo Sistemas Operacionais</h1> <!-- Título principal (nível 1) da página, semanticamente o mais importante. -->
+            <div class="search-container"> <!-- Um contêiner (div) com a classe 'search-container' para agrupar e estilizar os elementos de busca. -->
+                <input type="text" placeholder="Digite um sistema operacional"> <!-- Campo de texto para o usuário digitar. O 'placeholder' é o texto de ajuda que some ao digitar. -->
+                <button id="botao-busca">Buscar</button> <!-- Botão com o ID 'botao-busca' para acionar a busca (embora a busca seja dinâmica, ele serve como um reforço visual e de acessibilidade). -->
+            </div>
+        </div>
+    </header>
+
+    <main> <!-- Define o conteúdo principal e único do documento. Não deve haver mais de um <main> por página. -->
+       <section class="card-container"> <!-- Uma seção para agrupar os 'cards' de conteúdo. A classe 'card-container' é usada para aplicar estilos a este grupo. -->
+            <!-- 
+                Esta seção é preenchida dinamicamente pelo JavaScript (script.js).
+                O código abaixo é um exemplo de como um 'card' é estruturado.
+                <article class="card"> 
+                    <h2>Nome do Sistema</h2> 
+                    <p>Desenvolvedor • Categoria</p> 
+                    <p>Lançamento: Ano</p> 
+                    <p>Descrição do sistema...</p> 
+                    <p><strong>Curiosidade:</strong> Fato interessante...</p> 
+                </article> 
+            -->
+       </section>
+    </main>
+
+    <footer class="footer"> <!-- Define o rodapé da página, geralmente contendo informações de contato, direitos autorais e links secundários. -->
+        <div class="footer-location"> <!-- Um contêiner para a informação de localização. -->
+            Brasil
+        </div>
+        <ul class="footer-links"> <!-- Cria uma lista não ordenada para os links de contato. -->
+            <li> <!-- Item da lista (list item). -->
+                <a href="https://github.com/matheusgrigoriodesousa-cmyk">Github</a> <!-- Link para o perfil do Github. -->
+            </li>
+            <li> <!-- Outro item da lista. -->
+                <a href="https://www.linkedin.com/in/matheus-grigorio-77a51b355/">Linkedin</a> <!-- Link para o perfil do Linkedin. -->
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script> <!-- Vincula o arquivo JavaScript externo 'script.js'. É colocado no final do <body> para garantir que todo o HTML seja carregado e esteja disponível para o script antes de sua execução. -->
+</body>
+</html>
